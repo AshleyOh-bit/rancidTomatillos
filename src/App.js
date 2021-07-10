@@ -9,20 +9,20 @@ class App extends React.Component {
       super()
       this.state = {
         movies: movieData.movies,
-        selectedMovie: ""
+        // selectedMovie: ""
       }
     }
 
-    returnHome = () => {
-      this.setState({selectedMovie: ""})
-    }
+    // returnHome = () => {
+    //   this.setState({selectedMovie: ""})
+    // }
 
-    showMovieDetails = (id) => {
-      const foundMovie = this.state.movies.find(movie => {
-        return movie.id === id
-      })
-      this.setState({selectedMovie: foundMovie})
-    } 
+    // showMovieDetails = (id) => {
+    //   const foundMovie = this.state.movies.find(movie => {
+    //     return movie.id === id
+    //   })
+    //   this.setState({selectedMovie: foundMovie})
+    // } 
 
     render() {
       return (
@@ -32,7 +32,7 @@ class App extends React.Component {
           </header>
           {/* this is where our conditional rendering will happen */}
           {/* selected movie within conditional */}
-          {this.state.selectedMovie ? <SelectedMovie 
+          {/* {this.state.selectedMovie ? <SelectedMovie 
                                         key={this.state.selectedMovie.id} 
                                         poster={this.state.selectedMovie.poster_path} 
                                         backdrop={this.state.selectedMovie.backdrop_path}
@@ -45,7 +45,8 @@ class App extends React.Component {
                                         movies={this.state.movies} 
                                         showMovieDetails={this.showMovieDetails}
                                       /> 
-          }                         
+          }                          */}
+          <MoviesRepo movies={this.state.movies}/>
         </main>
       );
     }

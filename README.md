@@ -11,7 +11,7 @@
 ## Overview and Project Goals
 The [goal](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html) of this group project that was made for Mod 3 at [Turing School of Software and Design](https://turing.io/) is to learn to use React in order to create an application for users to have access to information about a selection of movies. 
 
-![View the application here!](https://all-rancid-tomatillos.herokuapp.com/)
+[View the application here!](https://all-rancid-tomatillos.herokuapp.com/)
 
 ## Why was this project created?
 To solidify and demonstrate the understanding of:
